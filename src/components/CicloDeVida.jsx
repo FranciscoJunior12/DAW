@@ -7,12 +7,18 @@ const CicloDeVida = () => {
 
 
     useEffect(() => {
-        console.log('Componente montado e pronto para ser renderizado.');
+        console.log('Componente montado.');
 
         return () => {
             console.log('Desmontando componente.');
         };
     });
+
+    useEffect(() => {
+        console.log('Componente Actulizado');
+
+
+    }, [count]);
 
 
 
