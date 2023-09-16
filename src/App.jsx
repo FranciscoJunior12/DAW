@@ -3,18 +3,20 @@ import { useState } from 'react'
 import './App.css'
 import HelloWorld from './components/HelloWorld'
 import Contador from './components/Contador'
-import ToDoList from './components/ToDoList'
-import CicloDeVida from './components/CicloDeVida'
-import RenderCondicional from './components/RenderCondicional'
+
+import { Outlet } from 'react-router-dom'
+import Header from './components/Header'
 
 function App() {
 
-
   return (
-    <div>
-      <RenderCondicional />
+    <div className="App">
+      <Header />
+      <Outlet />
     </div>
+
   )
+
 }
 
 export default App;

@@ -121,7 +121,7 @@ input {
   background-color: red;
 }
 
-ul {
+.container ul {
   display: flex;
   box-sizing: border-box;
   justify-content: flex-start;

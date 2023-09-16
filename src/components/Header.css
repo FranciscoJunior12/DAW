@@ -1,0 +1,17 @@
+#navbar {
+    margin-top: -300px;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    flex-direction: row;
+    font-size: 1.2rem;
+
+}
