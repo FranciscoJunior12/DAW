@@ -1,7 +1,7 @@
 
 
-const CondicionalRender = () => {
-    const isLoged = false;
+const CondicionalRender = ({isLoged}) => {
+   
 
     return (
 
