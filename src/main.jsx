@@ -9,19 +9,27 @@ import Contact from './pages/contact.jsx'
 import Services from './pages/Services.jsx'
 
 import './index.css'
+import './app.css'
+import { ThemeProvider } from './context/ThemeContext.jsx'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route element={<App />}>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/services' element={<Services />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<App />}>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/services' element={<Services />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+
+    </ThemeProvider>
+
 
 
   </React.StrictMode>,
