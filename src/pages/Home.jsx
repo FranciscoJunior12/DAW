@@ -1,20 +1,9 @@
-import { useContext } from "react";
-import Header from "../layout/Header";
-import { ThemeContext } from "../context/ThemeContext";
-
+import React from 'react'
 
 const Home = () => {
-
-
-    const { theme, toggleTheme } = useContext(ThemeContext)
     return (
-        <>
-
-            <h1>Pagina inicial</h1>
-            <p>Esta pagina esta com tema  {theme}</p>
-            <button onClick={toggleTheme}>Mudar tema</button>
-        </>
+        <div>Home</div>
     )
 }
 
-export default Home;
+export default Home

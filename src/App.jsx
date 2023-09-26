@@ -1,25 +1,23 @@
 
-
+import { Outlet } from 'react-router-dom';
 import './App.css'
-import './index.css'
-
-
-import { Outlet } from 'react-router-dom'
-import Header from './layout/Header'
-
+import CondicionalRender from './components/ConditionalRender';
+import Counter from './components/Counter';
+import HelloWorld from './components/HelloWorld'
+import LifeCycle from './components/LifeCycle';
+import NameAndAge from './components/NameAndAge';
+import ToDoList from './components/ToDoList';
+import Header from './layouts/Header';
 
 function App() {
 
+
   return (
-    <div className="App">
+    <>
       <Header />
-
       <Outlet />
-     
-    </div>
-
+    </>
   )
-
 }
 
 export default App;

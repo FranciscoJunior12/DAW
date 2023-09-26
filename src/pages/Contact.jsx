@@ -1,11 +1,11 @@
-const Contact = () => {
 
+
+import React from 'react'
+
+const Contact = () => {
     return (
-        <>
-      
-            <h1>Estou na page Contact</h1>
-        </>
+        <div>Contact</div>
     )
 }
 
-export default Contact;
+export default Contact

@@ -1,12 +1,12 @@
+import React from 'react'
 
-const Component2 = () => {
+const NameAndAge = () => {
     return (
-        <>
+        <div>
             <h2>Nome: <span>Francisco Manuel Domingos Junior</span></h2>
             <h2>Idade: <span>21</span></h2>
-
-        </>
+        </div>
     )
 }
 
-export default Component2;
+export default NameAndAge

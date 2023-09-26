@@ -1,8 +1,11 @@
-import { useState } from "react";
+import React, { useState } from 'react'
 
+import './styles/ToDoList.css'
 
 const ToDoList = () => {
+
     const [value, setValue] = useState("")
+
     const [tasks, setTasks] = useState([
         {
             id: 1,
@@ -48,26 +51,30 @@ const ToDoList = () => {
         console.log(filterdTasks)
     }
 
+
+
     return (
         <div className="container">
             <h1>To Do List</h1>
             <form onSubmit={handleForm}>
                 <input type="text" value={value} onChange={(e) => { setValue(e.target.value) }} placeholder="Digite a tarefa" />
+
                 <button>Add</button>
 
             </form>
 
             <ul>
                 {tasks.length > 0 && tasks.map((task) => (
-                    <li className="task" key={task.id}><p>{task.description}</p>
-                        <button onClick={() => { removeTask(task.id) }}>X</button></li>
+                    <li className="task" key={task.id}>
+                        <p>{task.description}</p>
+                        <button onClick={() => { removeTask(task.id) }}>X</button>
+                    </li>
                 ))}
 
             </ul>
 
         </div>
     )
-
 }
 
-export default ToDoList;
+export default ToDoList
