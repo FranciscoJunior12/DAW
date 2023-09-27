@@ -1,49 +1,53 @@
-
 .container {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 2px solid #213547;
-    padding: 60px;
-  
-  
-  }
-  
-  form button {
-    background-color: rgb(86, 204, 86);
-    height: 44px;
-    margin-left: 10px;
-  }
-  
-  input {
-    max-width: 300px;
-    padding: 10px;
-    outline: none;
-    font-size: 1.1rem;
-  }
-  
-  .task {
-    display: flex;
-    border: 2px solid #6f73c0;
-    align-items: center;
-    text-decoration: none;
-    justify-content: space-between;
-    padding-left: 15px;
-    min-width: 300px;
-  }
-  
-  .task button {
-    background-color: red;
-  }
-  
-  .container ul {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding-inline-start: 0px;
-    gap: 20px;
-  }
-  
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #213547;
+  padding: 60px;
+
+
+}
+
+form button {
+  background-color: rgb(86, 204, 86);
+  height: 44px;
+  margin-left: 10px;
+}
+
+input {
+  max-width: 300px;
+  padding: 10px;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.task {
+  display: flex;
+  border: 2px solid #6f73c0;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-between;
+  padding-left: 15px;
+  min-width: 300px;
+}
+
+.task button {
+  background-color: red;
+}
+
+
+
+.margin {
+
+  margin-top: 70px;
+}
+
+.lista {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-inline-start: 0px;
+  gap: 20px;
+}

@@ -1,14 +1,17 @@
 import React from 'react'
 import Header from '../layouts/Header'
+import PainelAdmin from '../components/PainelAdmin'
 
-const About = () => {
+const Admin = () => {
     return (
         <>
+
             <Header />
-            <div>About</div>
+            <PainelAdmin />
+
 
         </>
     )
 }
 
-export default About
+export default Admin

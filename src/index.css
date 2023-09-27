@@ -25,3 +25,26 @@ body {
 }
 
 
+.error{
+
+color: red;
+}
+
+.visible{
+  display: block;
+}
+
+.invisible{
+  display: none;
+}
+
+.display{
+  display: none;
+}
+
+.flex{
+display: flex;
+justify-content: space-between;
+gap:20px;
+
+}

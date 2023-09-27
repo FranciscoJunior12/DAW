@@ -1,9 +1,14 @@
 import React from 'react'
+import Header from '../layouts/Header'
 
 const Services = () => {
     return (
-        <div>Services</div>
+        <>
+            <Header />
+            <div>Services</div>
+
+        </>
     )
 }
 
-export default Services
+export default Services;

@@ -8,13 +8,17 @@ import LifeCycle from './components/LifeCycle';
 import NameAndAge from './components/NameAndAge';
 import ToDoList from './components/ToDoList';
 import Header from './layouts/Header';
+import Login from './components/Login';
+import Painel from './components/Painel';
+import PainelAdmin from './components/PainelAdmin';
 
 function App() {
 
 
   return (
     <>
-      <Header />
+
+      {/* <Login /> */}
       <Outlet />
     </>
   )

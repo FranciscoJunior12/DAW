@@ -63,7 +63,7 @@ const ToDoList = () => {
 
             </form>
 
-            <ul>
+            <ul className='lista'>
                 {tasks.length > 0 && tasks.map((task) => (
                     <li className="task" key={task.id}>
                         <p>{task.description}</p>
